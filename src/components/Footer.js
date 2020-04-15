@@ -13,6 +13,7 @@ export default function Footer() {
         filter: {
           node_locale: { eq: "en-US" }
           website: { in: ["Compare Instant Loans"] }
+          adsPage: { ne: true }
         }
       ) {
         nodes {
@@ -78,7 +79,7 @@ export default function Footer() {
             {navigation[0] && (
               <>
                 {navigation[0].firstColumn &&
-                  navigation[0].firstColumn.map(item => (
+                  navigation[0].firstColumn.map((item) => (
                     <Link to={item.slug} key={item.slug}>
                       {item.navigationTitle}
                     </Link>
@@ -97,7 +98,7 @@ export default function Footer() {
             {navigation[0] && (
               <>
                 {navigation[0].secondColumn &&
-                  navigation[0].secondColumn.map(item => (
+                  navigation[0].secondColumn.map((item) => (
                     <Link to={item.slug} key={item.slug}>
                       {item.navigationTitle}
                     </Link>
@@ -116,7 +117,7 @@ export default function Footer() {
             {navigation[0] && (
               <>
                 {navigation[0].thirdColumn &&
-                  navigation[0].thirdColumn.map(item => (
+                  navigation[0].thirdColumn.map((item) => (
                     <Link to={item.slug} key={item.slug}>
                       {item.navigationTitle}
                     </Link>
@@ -135,7 +136,7 @@ export default function Footer() {
             {navigation[0] && (
               <>
                 {navigation[0].fourthColumn &&
-                  navigation[0].fourthColumn.map(item => (
+                  navigation[0].fourthColumn.map((item) => (
                     <Link to={item.slug} key={item.slug}>
                       {item.navigationTitle}
                     </Link>
