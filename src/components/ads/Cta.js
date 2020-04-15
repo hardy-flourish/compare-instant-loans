@@ -4,7 +4,7 @@ import css from "@emotion/css"
 export default function Cta({ className, amount = 2000, term = 12 }) {
   return (
     <a
-      href="/apply/"
+      href="https://comparenoguarantorloans.co.uk/redirect/"
       state={{ amount, term }}
       css={css`
         box-shadow: -1px 4px 12px rgba(29, 32, 54, 0.35);

@@ -7,6 +7,7 @@ import Cta from "./Cta"
 import { useStaticQuery, graphql } from "gatsby"
 import CookieConsent from "react-cookie-consent"
 import css from "@emotion/css"
+import Helmet from "react-helmet"
 export default function Layout({ children, formPage }) {
   const [menuIsOpen, setMenuIsOpen] = React.useState(false)
   const { cookies } = useStaticQuery(graphql`
@@ -26,6 +27,13 @@ export default function Layout({ children, formPage }) {
     <div className="min-h-screen flex flex-col">
       {/* <SideMenu {...{ menuIsOpen, setMenuIsOpen }}></SideMenu> */}
       <Header {...{ menuIsOpen, setMenuIsOpen }}></Header>
+      <Helmet>
+        <script
+          data-ad-client="ca-pub-3667268687778504"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        ></script>
+      </Helmet>
       {children}
 
       {!formPage && (

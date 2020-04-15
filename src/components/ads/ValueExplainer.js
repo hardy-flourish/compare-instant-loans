@@ -5,7 +5,7 @@ import Slider from "react-slick"
 import css from "@emotion/css"
 import tw from "tailwind.macro"
 import Image from "gatsby-image"
-import Cta from "@components/Cta"
+import Cta from "@components/ads/Cta"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 export default function ValueExplainer() {
