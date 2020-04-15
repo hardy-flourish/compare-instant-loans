@@ -34,6 +34,7 @@ module.exports = {
       options: {
         aliases: {
           "@components": "./src/components",
+          "@images": "./src/images",
         },
       },
     },
