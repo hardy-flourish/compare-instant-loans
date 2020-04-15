@@ -21,7 +21,7 @@ export const onRouteUpdate = () => {
   if (form) {
     addJS({
       id: "CWConfig",
-      code: `window.clearChoice_conf = window.clearChoice_conf || {};clearChoice_conf = {key: 'F19746F2-0F51-4231-BFC4-A89803B043B1',  elemId: 'ccApply', theme: 'ChooseWisely', loanAmount: window.__loanAmount,alwaysShowFirstStage:true, loanTerm: window.__loanTerm,  mode: "Results" }; `,
+      code: `window.clearChoice_conf = window.clearChoice_conf || {};clearChoice_conf = {key: 'F19746F2-0F51-4231-BFC4-A89803B043B1',  elemId: 'ccApply', theme: 'ChooseWisely', loanAmount: window.__loanAmount,alwaysShowFirstStage:true, loanTerm: window.__loanTerm,  mode: "Results",onSubmit:function(formData){ga('send', { hitType: 'event',eventCategory: 'Form', eventAction: 'Submit',eventLabel: 'la:' + window.__loanAmount + ' lt: ' + window.__loanTerm})}  };  `,
     })
     addJS({
       id: "CWScript",
