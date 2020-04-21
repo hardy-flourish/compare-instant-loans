@@ -17,6 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
           filter: {
             node_locale: { eq: "en-US" }
             website: { in: ["Compare Instant Loans"] }
+            slug: { ne: "instant-loans-In-the-uk-ads" }
           }
         ) {
           nodes {
@@ -27,7 +28,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     `
   )
-  data.allContentfulPage.nodes.forEach(node => {
+  data.allContentfulPage.nodes.forEach((node) => {
     createPage({
       path: node.slug == "/" ? "/" : `/${node.slug}/`.replace("//", "/"),
       component: template,

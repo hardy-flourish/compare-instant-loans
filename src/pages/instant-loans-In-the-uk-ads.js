@@ -26,7 +26,7 @@ export const query = graphql`
     heroData: contentfulPage(
       node_locale: { eq: "en-US" }
       website: { in: ["Compare Instant Loans"] }
-      slug: { eq: "instant-loans-In-the-uk" }
+      slug: { eq: "instant-loans-In-the-uk-ads" }
     ) {
       hasAHeroBanner
       heroBannerImage {
@@ -43,14 +43,14 @@ export const query = graphql`
     VE: contentfulPage(
       node_locale: { eq: "en-US" }
       website: { in: ["Compare Instant Loans"] }
-      slug: { eq: "instant-loans-In-the-uk" }
+      slug: { eq: "instant-loans-In-the-uk-ads" }
     ) {
       hasAValueExplainer
     }
     QA: contentfulPage(
       node_locale: { eq: "en-US" }
       website: { in: ["Compare Instant Loans"] }
-      slug: { eq: "instant-loans-In-the-uk" }
+      slug: { eq: "instant-loans-In-the-uk-ads" }
     ) {
       commonQuestions {
         question
@@ -64,7 +64,7 @@ export const query = graphql`
     Content: contentfulPage(
       node_locale: { eq: "en-US" }
       website: { in: ["Compare Instant Loans"] }
-      slug: { eq: "instant-loans-In-the-uk" }
+      slug: { eq: "instant-loans-In-the-uk-ads" }
     ) {
       main: mainContentSection {
         md: childMarkdownRemark {
