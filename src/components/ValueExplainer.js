@@ -19,21 +19,21 @@ export default function ValueExplainer() {
         firstSectionContent
         firstSectionImage {
           fluid {
-            ...GatsbyContentfulFluid
+            ...GatsbyContentfulFluid_withWebp
           }
         }
         secondSectionTitle
         secondSectionContent
         secondSectionImage {
           fluid {
-            ...GatsbyContentfulFluid
+            ...GatsbyContentfulFluid_withWebp
           }
         }
         thirdSectionTitle
         thirdSectionContent
         thirdSectionImage {
           fluid {
-            ...GatsbyContentfulFluid
+            ...GatsbyContentfulFluid_withWebp
           }
         }
       }

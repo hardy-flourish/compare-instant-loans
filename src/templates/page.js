@@ -31,7 +31,7 @@ export const query = graphql`
       hasAHeroBanner
       heroBannerImage {
         fluid(quality: 100) {
-          ...GatsbyContentfulFluid
+          ...GatsbyContentfulFluid_withWebp
         }
       }
       mainHeadline

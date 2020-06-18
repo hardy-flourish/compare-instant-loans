@@ -18,22 +18,22 @@ export default function ValueExplainer() {
         firstSectionTitle
         firstSectionContent
         firstSectionImage {
-          fluid {
-            ...GatsbyContentfulFluid
+          fluid(maxWidth: 600) {
+            ...GatsbyContentfulFluid_withWebp
           }
         }
         secondSectionTitle
         secondSectionContent
         secondSectionImage {
-          fluid {
-            ...GatsbyContentfulFluid
+          fluid(maxWidth: 600) {
+            ...GatsbyContentfulFluid_withWebp
           }
         }
         thirdSectionTitle
         thirdSectionContent
         thirdSectionImage {
-          fluid {
-            ...GatsbyContentfulFluid
+          fluid(maxWidth: 600) {
+            ...GatsbyContentfulFluid_withWebp
           }
         }
       }
