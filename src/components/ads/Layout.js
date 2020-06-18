@@ -33,6 +33,7 @@ export default function Layout({ children, formPage }) {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script>
+        <title> Compare Instant Loans</title>
       </Helmet>
       {children}
 
