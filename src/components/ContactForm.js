@@ -147,7 +147,7 @@ export default function ContactForm() {
                       </span>
                     )}
                 </div>
-                ,
+
                 <div className="col">
                   <button
                     type="submit"
