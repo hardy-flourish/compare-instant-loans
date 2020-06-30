@@ -63,7 +63,7 @@ export default function ContactForm() {
             form {
               input,
               textarea {
-                ${tw`bg-brand-gray-bg  p-4  md:mb-3  mb-4 lg:mb-0  rounded-lg w-full outline-none focus:border-brand-orange border`}
+                ${tw`bg-brand-gray-bg  p-4  md:mb-3  mb-4 lg:mb-0  rounded-lg w-full outline-none focus:border-brand-purple border`}
               }
               .col {
                 ${tw`mb-4`}
